@@ -51,15 +51,38 @@
     </ion-toolbar>
   </ion-header>
 </div>
+
 <ion-buttons [collapse]="true" slot="end" class="botao1c">
-  <ion-button shape="round"  fill="outline"  class="botao1" >Pizza</ion-button>
-  <ion-button shape="round"  fill="outline"  class="botao1" >Burguer</ion-button>
+  <ion-button shape="round"  fill="outline"  class="botao1" (click)="showPizza()">Pizza</ion-button>
+  <ion-button shape="round"  fill="outline"  class="botao1" (click)="showBurguer()">Burguer</ion-button>
 </ion-buttons>
+<ion-content>
+<div #pizza class="div div-pizza">
+  <ion-row class="place">
+    <ion-col><p>Pizza</p></ion-col>
+  </ion-row>
+  <ion-row class="place">
+    <ion-col><p>Pizza2</p></ion-col>
+  </ion-row>
+  <ion-row class="place">
+    <ion-col><p>Pizza3</p></ion-col>
+  </ion-row>
+</div>
+<div #burguer class="div div-burguer">
+  <ion-row class="place">
+    <ion-col><p>Burguer1</p></ion-col>
+  </ion-row>
+  <ion-row class="place">
+    <ion-col><p>Burguer2</p></ion-col>
+  </ion-row>
+  <ion-row class="place">
+    <ion-col><p>Burguer3</p></ion-col>
+  </ion-row>
+</div>
+
 <ion-fab  slot="fixed" vertical="bottom" horizontal="end">
   <ion-fab-button color="danger" > 
     <ion-icon  name="cart"></ion-icon>
   </ion-fab-button>
 </ion-fab>
-  <ion-content>
-
 </ion-content>
