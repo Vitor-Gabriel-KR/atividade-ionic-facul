@@ -18,6 +18,8 @@ export class HomePage {
     {cod:5,nome:'Hambúrger com cheddar',valor:'R$ 23,99',detalhes:'O hambúrguer com cheddar é uma variação do hambúrguer tradicional que é feito com uma fatia de queijo cheddar derretido sbre o hambúrguer gralhado, o queijo cheddar é um queijo amarelo-alaranjado, de origem inglesa muito popular em todo o mundo.'},
     {cod:6,nome:'Hambúrguer americano',valor:'R$ 19,99',detalhes:'O hambúrguer americano é um clássico da cúlinaria dos Estados unidos, com ma receita que pode variar de região para região e de restaurante para restaurante.Em geral, o hambúrguer americano é um hambúrguer de carne bovina grelhado ou frito, servido co pão de hambúrguer, alface, tomate,cebola,picles e um molho especial, com o ketchup ou a maionese.'},
   ]
+  
+
   constructor() {}
 
   showPizza() {
@@ -35,5 +37,14 @@ export class HomePage {
     divPizza.classList.remove('show');
     divBurguer.classList.add('show');
   }
-
+  imagens1: string[] = [
+    'assets/imagensio/pizza1.jpg',
+    'assets/imagensio/pizza2.jpg',
+    'assets/imagensio/pizza3.webp',
+  ];
+  imagens2: string[] = [
+    'assets/imagensio/hamburguer1.jpg',
+    'assets/imagensio/hamburguer2.jpg',
+    'assets/imagensio/hamburguer3.webp',
+  ];
 }

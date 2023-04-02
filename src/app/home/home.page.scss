@@ -24,6 +24,8 @@
   background-color: rgb(128, 12, 12);
 }
 .place{
+  position: relative;
+  float: center;
   background-color: rgb(128, 12, 12);
   width:350px;
   height:400px;
@@ -35,6 +37,8 @@
   box-shadow: 2px 2px 10px 2px #000000;
   margin-bottom: 10px;
   margin-left: 10px;
+ 
+
   
 }
 .linha{
@@ -60,7 +64,14 @@
     display: block;
   }
 }
-
-
+.imagem{
+  margin: auto;
+}
+.texto{
+  margin: auto;
+}
+.botaotb{
+  margin: auto;
+}
 
 
