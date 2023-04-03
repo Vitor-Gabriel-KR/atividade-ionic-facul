@@ -1,0 +1,24 @@
+<ion-header >
+  <ion-col>
+    <ion-title class="texto1"> pizza de 4 queijos</ion-title>
+  <ion-button expand="full" fill="clear" size="small" class="botao" routerLink="/home">
+    <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+  </ion-button>
+</ion-col>
+</ion-header>
+
+<ion-content>
+<div class="imagem">
+  <img [src]="imagens1[2]" alt="Descrição da Imagem">
+</div>
+<p class="fonte">A pizza de quatro queijos é uma opção clássica de pizza que apresenta quatro tipos diferentes de queijo como seus ingredientes principais.  </p>
+<p class="fonte">Geralmente, a pizza é coberta com uma mistura de queijos como mussarela, parmesão, gorgonzola e provolone, que são derretidos juntos para criar uma cobertura cremosa e saborosa. </p>
+<p class="fonte">. Algumas variações podem incluir outros queijos, como queijo brie ou queijo cheddar. </p>
+<ion-col></ion-col>
+<div class="contador">
+  <ion-col><p class="money">R$ 35,00</p></ion-col>
+  <button class="botao2" (click)="aumentar()">+</button>
+  <div class="valor">{{ valor }}</div>
+  <button class="botao2" (click)="diminuir()">-</button>
+</div>
+</ion-content>

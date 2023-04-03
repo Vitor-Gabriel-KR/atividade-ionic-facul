@@ -1,0 +1,24 @@
+<ion-header >
+  <ion-col>
+    <ion-title class="texto1"> Hambúrguer americano</ion-title>
+  <ion-button expand="full" fill="clear" size="small" class="botao" routerLink="/home">
+    <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+  </ion-button>
+</ion-col>
+</ion-header>
+
+<ion-content>
+<div class="imagem">
+  <img [src]="imagens2[2]" alt="Descrição da Imagem">
+</div>
+<p class="fonte">O hambúrguer americano é um sanduíche que consiste em um hambúrguer grelhado de carne bovina, geralmente servido em um pão de hambúrguer com alface, tomate, cebola, picles e queijo americano. </p>
+<p class="fonte">  O hambúrguer é feito de carne moída, que é temperada com sal e pimenta antes de ser moldada em um disco achatado e grelhada até ficar suculento e com uma crosta crocante. </p>
+<p class="fonte">O queijo americano é uma parte essencial desse sanduíche, pois derrete facilmente e adiciona um sabor cremoso e salgado ao hambúrguer. </p>
+<ion-col></ion-col>
+<div class="contador">
+  <ion-col><p class="money">R$ 22,00</p></ion-col>
+  <button class="botao2" (click)="aumentar()">+</button>
+  <div class="valor">{{ valor }}</div>
+  <button class="botao2" (click)="diminuir()">-</button>
+</div>
+</ion-content>

@@ -1,0 +1,24 @@
+<ion-header >
+  <ion-col>
+    <ion-title class="texto1"> Hambúrguer de cheddar</ion-title>
+  <ion-button expand="full" fill="clear" size="small" class="botao" routerLink="/home">
+    <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+  </ion-button>
+</ion-col>
+</ion-header>
+
+<ion-content>
+<div class="imagem">
+  <img [src]="imagens2[1]" alt="Descrição da Imagem">
+</div>
+<p class="fonte">O hambúrguer de cheddar é um tipo de sanduíche feito com um hambúrguer grelhado, queijo cheddar derretido e outros ingredientes como alface, tomate e cebola, tudo servido entre dois pães de hambúrguer.</p>
+<p class="fonte"> O queijo cheddar é uma parte fundamental desse sanduíche, pois derrete perfeitamente e adiciona um sabor rico e cremoso ao hambúrguer.</p>
+<p class="fonte">Alguns restaurantes também adicionam bacon, molho barbecue ou outros condimentos para dar um toque extra de sabor ao sanduíche.</p>
+<ion-col></ion-col>
+<div class="contador">
+  <ion-col><p class="money">R$ 20,00</p></ion-col>
+  <button class="botao2" (click)="aumentar()">+</button>
+  <div class="valor">{{ valor }}</div>
+  <button class="botao2" (click)="diminuir()">-</button>
+</div>
+</ion-content>

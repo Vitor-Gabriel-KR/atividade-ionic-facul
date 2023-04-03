@@ -1,0 +1,24 @@
+<ion-header >
+  <ion-col>
+    <ion-title class="texto1"> Pizza de calabresa</ion-title>
+  <ion-button expand="full" fill="clear" size="small" class="botao" routerLink="/home">
+    <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+  </ion-button>
+</ion-col>
+</ion-header>
+
+<ion-content>
+<div class="imagem">
+  <img [src]="imagens1[0]" alt="Descrição da Imagem">
+</div>
+<p class="fonte">A pizza de calabresa é um dos sabores de pizza mais populares no mundo inteiro. </p>
+<p class="fonte"> Essa pizza é geralmente coberta com molho de tomate, queijo mussarela e fatias finas de linguiça calabresa, um tipo de embutido com um sabor defumado e picante.</p>
+<p class="fonte"> Algumas versões também podem incluir cebola, azeitonas, tomate e orégano como ingredientes adicionais. </p>
+<ion-col></ion-col>
+<div class="contador">
+  <ion-col><p class="money">R$ 32,00</p></ion-col>
+  <button class="botao2" (click)="aumentar()">+</button>
+  <div class="valor">{{ valor }}</div>
+  <button class="botao2" (click)="diminuir()">-</button>
+</div>
+</ion-content>

@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-produto',
-  templateUrl: './produto.page.html',
-  styleUrls: ['./produto.page.scss'],
+  selector: 'app-produto2',
+  templateUrl: './produto2.page.html',
+  styleUrls: ['./produto2.page.scss'],
 })
-export class ProdutoPage implements OnInit {
+export class Produto2Page implements OnInit {
   imagens1: string[] = [
     'assets/imagensio/pizza1.jpg',
     'assets/imagensio/pizza2.jpg',
@@ -27,11 +27,9 @@ export class ProdutoPage implements OnInit {
       this.valor--;
     }
   }
-
   constructor() { }
 
   ngOnInit() {
-    
   }
 
 }

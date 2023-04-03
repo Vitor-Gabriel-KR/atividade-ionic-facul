@@ -1,0 +1,24 @@
+<ion-header >
+  <ion-col>
+    <ion-title class="texto1"> pizza de frango</ion-title>
+  <ion-button expand="full" fill="clear" size="small" class="botao" routerLink="/home">
+    <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+  </ion-button>
+</ion-col>
+</ion-header>
+
+<ion-content>
+<div class="imagem">
+  <img [src]="imagens1[1]" alt="Descrição da Imagem">
+</div>
+<p class="fonte">A pizza de frango é uma opção de pizza que apresenta pedaços de carne de frango como ingrediente principal.  </p>
+<p class="fonte"> Geralmente, essa pizza é coberta com molho de tomate, queijo mussarela e frango desfiado cozido, que pode ser temperado com especiarias como pimenta, orégano e alho. </p>
+<p class="fonte"> Algumas variações podem incluir outros ingredientes, como milho, cebola, tomate ou cogumelos. </p>
+<ion-col></ion-col>
+<div class="contador">
+  <ion-col><p class="money">R$ 30,00</p></ion-col>
+  <button class="botao2" (click)="aumentar()">+</button>
+  <div class="valor">{{ valor }}</div>
+  <button class="botao2" (click)="diminuir()">-</button>
+</div>
+</ion-content>

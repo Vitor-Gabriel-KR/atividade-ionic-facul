@@ -1,9 +1,25 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>produto</ion-title>
-  </ion-toolbar>
+<ion-header >
+    <ion-col>
+      <ion-title class="texto1"> Hambúrguer de costela</ion-title>
+    <ion-button expand="full" fill="clear" size="small" class="botao" routerLink="/home">
+      <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
+    </ion-button>
+  </ion-col>
 </ion-header>
 
 <ion-content>
+  <div class="imagem">
+    <img [src]="imagens2[0]" alt="Descrição da Imagem">
+  </div>
+  <p class="fonte">Um hambúrguer de costela é uma deliciosa iguaria que tem como base um suculento hambúrguer feito com carne de costela moída. A carne é temperada com uma combinação de especiarias para realçar o sabor e dar uma textura macia e suculenta.</p>
+  <p class="fonte">Para dar ainda mais sabor ao hambúrguer de costela, ele pode ser temperado com uma variedade de especiarias e ervas aromáticas, como sal, pimenta, alho, cebola e tomilho.</p>
+  <p class="fonte">O hambúrguer de costela é geralmente servido em um pão de hambúrguer macio e fresco, que pode ser torrado na grelha para adicionar ainda mais textura e sabor. Ele pode ser acompanhado de uma variedade de coberturas, como queijo cheddar derretido, cebolas caramelizadas, bacon crocante, alface, tomate e molhos, como maionese, mostarda e ketchup.</p>
 
+  <div class="contador">
+    <ion-col><p class="money">R$ 25,00</p></ion-col>
+    <button class="botao2" (click)="aumentar()">+</button>
+    <div class="valor">{{ valor }}</div>
+    <button class="botao2" (click)="diminuir()">-</button>
+  </div>
 </ion-content>
+

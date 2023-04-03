@@ -60,72 +60,90 @@
 <div #pizza class="div div-pizza">
 
   <ion-row class="place">
-    <ion-grid class="imagem">
+    <div>
+    <ion-grid >
       <ion-row>
         <ion-col >
-          <img [src]="imagens1[0]">
+          <img [src]="imagens1[0]" class="imagem">
         </ion-col>
       </ion-row>
     </ion-grid>
-    <ion-col  class="texto"><p>pizza</p></ion-col>
-    <ion-button  expand="full"    fill="solid" size="small"  color="warning" class="botaotb"   >Detalhes</ion-button>
+    <ion-col  class="texto" ><p>Pizza de calabresa</p></ion-col>
+    <ion-col class="money">R$32,00</ion-col>
+    <ion-button  expand="full"    fill="solid" size="small"  color="warning" class="botaotb" routerLink="/produto3"  >Detalhes</ion-button>
+  </div>
   </ion-row>
   <ion-row class="place">
-    <ion-grid class="imagem">
+    <div>
+    <ion-grid >
       <ion-row>
         <ion-col >
-          <img [src]="imagens1[1]">
+          <img [src]="imagens1[1]" class="imagem">
         </ion-col>
       </ion-row>
     </ion-grid>
-    <ion-col  class="texto"><p>Pizza2</p></ion-col>
-    <ion-button  expand="full"    fill="solid" size="small"  color="warning" class="botaotb"   >Detalhes</ion-button>
+    <ion-col  class="texto"><p>Pizza de frango</p></ion-col>
+    <ion-col class="money">R$30,00</ion-col>
+    <ion-button  expand="full"    fill="solid" size="small"  color="warning" class="botaotb"  routerLink="/produto4" >Detalhes</ion-button>
+  </div>
   </ion-row>
   <ion-row class="place">
-    <ion-grid class="imagem">
+    <div>
+    <ion-grid >
       <ion-row>
         <ion-col >
-          <img [src]="imagens1[2]">
+          <img [src]="imagens1[2]" class="imagem">
         </ion-col>
       </ion-row>
     </ion-grid>
-    <ion-col  class="texto"><p>Pizza3</p></ion-col>
-    <ion-button  expand="full"    fill="solid" size="small"  color="warning" class="botaotb"   >Detalhes</ion-button>
+    <ion-col  class="texto"><p>Pizza de 4 queijos</p></ion-col>
+    <ion-col class="money">R$35,00</ion-col>
+    <ion-button  expand="full"    fill="solid" size="small"  color="warning" class="botaotb"   routerLink="/produto5" >Detalhes</ion-button>
+  </div>
   </ion-row>
 </div>
 <div #burguer class="div div-burguer">
   <ion-row class="place">
-    <ion-grid class="imagem">
+    <div>
+    <ion-grid >
       <ion-row>
         <ion-col >
-          <img [src]="imagens2[0]">
+          <img [src]="imagens2[0]" class="imagem">
         </ion-col>
       </ion-row>
     </ion-grid>
-    <ion-col class="texto"><p>Burguer1</p></ion-col>
-    <ion-button  expand="full"    fill="solid" size="small"  color="warning" class="botaotb"   >Detalhes</ion-button>
+    <ion-col class="texto"><p>Hambúrger de costela</p></ion-col>
+    <ion-col class="money">R$25,00</ion-col>
+    <ion-button  expand="full"    fill="solid" size="small"  color="warning" class="botaotb"  routerLink="/produto"  >Detalhes</ion-button>
+  </div>
   </ion-row>
   <ion-row class="place">
-    <ion-grid class="imagem">
+    <div>
+    <ion-grid >
       <ion-row>
         <ion-col >
-          <img [src]="imagens2[1]">
+          <img [src]="imagens2[1]" class="imagem">
         </ion-col>
       </ion-row>
     </ion-grid>
-    <ion-col  class="texto"><p>Burguer2</p></ion-col>
-    <ion-button  expand="full"    fill="solid" size="small"  color="warning" class="botaotb"   >Detalhes</ion-button>
+    <ion-col  class="texto"><p>Hambúrger com cheddar</p></ion-col>
+    <ion-col class="money">R$20,00</ion-col>
+    <ion-button  expand="full"    fill="solid" size="small"  color="warning" class="botaotb"  routerLink="/produto6"  >Detalhes</ion-button>
+  </div>
   </ion-row>
   <ion-row class="place">
-    <ion-grid class="imagem">
+    <div>
+    <ion-grid >
       <ion-row>
         <ion-col >
-          <img [src]="imagens2[2]">
+          <img [src]="imagens2[2]" class="imagem">
         </ion-col>
       </ion-row>
     </ion-grid>
-    <ion-col  class="texto"><p>Burguer3</p></ion-col>
-    <ion-button  expand="full"    fill="solid" size="small"  color="warning" class="botaotb"   >Detalhes</ion-button>
+    <ion-col  class="texto"><p>Hambúrguer americano</p></ion-col>
+    <ion-col class="money">R$22,00</ion-col>
+    <ion-button  expand="full"    fill="solid" size="small"  color="warning" class="botaotb"  routerLink="/produto2"  >Detalhes</ion-button>
+  </div>
   </ion-row>
 </div>
 
